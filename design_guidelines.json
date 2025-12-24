@@ -1,0 +1,144 @@
+{
+  "identity": {
+    "name": "Kuro",
+    "description": "A premium, minimalist file storage platform that treats data like art.",
+    "tone": "Swiss Brutalist meets Digital Vault. Objective, rigid, functional, yet emotionally heavy.",
+    "archetype": "Swiss & High-Contrast (Authority, Clarity, Truth) with Electric Accents"
+  },
+  "typography": {
+    "headings": {
+      "family": "Syne",
+      "weights": ["700", "800"],
+      "usage": "Use for all major headings (h1-h3). Tight tracking (-0.02em).",
+      "fallback": "sans-serif"
+    },
+    "body": {
+      "family": "Manrope",
+      "weights": ["400", "500", "600"],
+      "usage": "Use for all UI text, labels, and paragraphs.",
+      "fallback": "sans-serif"
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "usage": "Use for file metadata, IDs, and technical details."
+    }
+  },
+  "colors": {
+    "light": {
+      "background": "#FFFFFF",
+      "foreground": "#050505",
+      "card": "#F4F4F5",
+      "card_foreground": "#050505",
+      "primary": "#002FA7",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#F4F4F5",
+      "secondary_foreground": "#18181B",
+      "muted": "#F4F4F5",
+      "muted_foreground": "#71717A",
+      "accent": "#002FA7",
+      "accent_foreground": "#FFFFFF",
+      "destructive": "#EF4444",
+      "destructive_foreground": "#FFFFFF",
+      "border": "#E4E4E7",
+      "input": "#E4E4E7",
+      "ring": "#002FA7"
+    },
+    "dark": {
+      "background": "#09090B",
+      "foreground": "#FAFAFA",
+      "card": "#18181B",
+      "card_foreground": "#FAFAFA",
+      "primary": "#CCFF00",
+      "primary_foreground": "#000000",
+      "secondary": "#27272A",
+      "secondary_foreground": "#FAFAFA",
+      "muted": "#27272A",
+      "muted_foreground": "#A1A1AA",
+      "accent": "#CCFF00",
+      "accent_foreground": "#000000",
+      "destructive": "#7F1D1D",
+      "destructive_foreground": "#FAFAFA",
+      "border": "#27272A",
+      "input": "#27272A",
+      "ring": "#CCFF00"
+    }
+  },
+  "visual_enhancers": {
+    "borders": "1px solid var(--border). No rounded corners on main containers (0px). Small elements use rounded-md.",
+    "shadows": "None for cards. Sharp offsets for floating elements: shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
+    "textures": "Subtle noise overlay on the background (opacity 0.03).",
+    "glassmorphism": "Used sparingly on sticky headers: backdrop-blur-md bg-background/80 border-b border-border/50."
+  },
+  "layout_strategy": {
+    "dashboard": {
+      "type": "Bento Grid",
+      "grid_cols": "grid-cols-1 md:grid-cols-12",
+      "gap": "gap-4",
+      "padding": "p-6 md:p-8"
+    },
+    "marketing": {
+      "type": "Asymmetrical Tetris",
+      "grid_cols": "grid-cols-1 md:grid-cols-12",
+      "gap": "gap-8",
+      "padding": "p-8 md:p-12"
+    }
+  },
+  "components": {
+    "buttons": {
+      "default": "h-10 px-6 rounded-none font-bold uppercase tracking-wide transition-transform active:translate-y-0.5",
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90",
+      "outline": "border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+    },
+    "cards": {
+      "style": "bg-card border border-border rounded-none p-6 hover:border-primary transition-colors duration-300",
+      "interaction": "No lift. Border color change only."
+    },
+    "inputs": {
+      "style": "h-12 rounded-none border-2 border-input bg-transparent px-4 focus:border-primary focus:ring-0 transition-colors"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-out",
+    "hover": "scale-[1.02] for images, color shift for text",
+    "page_load": "staggered fade-in-up for grid items"
+  },
+  "image_urls": {
+    "auth_background": {
+      "url": "https://images.unsplash.com/photo-1675627453084-505806a00406?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHNlY3VyZSUyMGRpZ2l0YWwlMjBkYXRhJTIwZmxvd3xlbnwwfHx8fDE3NjY1Njc2ODB8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract 3D code monitor for login/signup side panel",
+      "category": "auth"
+    },
+    "dashboard_empty": {
+      "url": "https://images.unsplash.com/photo-1610641563856-4ec0223d7084?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwb2ZmaWNlJTIwd29ya3NwYWNlJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NjY1Njc2ODJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Minimalist monitor for empty state or 'no files' view",
+      "category": "dashboard"
+    },
+    "collaboration_hero": {
+      "url": "https://images.unsplash.com/photo-1603219950587-b4f3f7ee87e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwb2ZmaWNlJTIwd29ya3NwYWNlJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NjY1Njc2ODJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Casual workspace for 'Shared with me' or team section",
+      "category": "marketing"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Implement the 'Kuro' design system strictly.",
+    "Use the 'Syne' font for all headings. Import it from Google Fonts.",
+    "Use 'Manrope' for body text. Import it from Google Fonts.",
+    "Ensure the Dark/Light toggle works and persists preference.",
+    "Use the specified color palette. Do not use default Tailwind colors.",
+    "For the Dashboard, use a Sidebar layout with a Bento Grid for the main content.",
+    "File cards should be rectangular with sharp edges (rounded-none or rounded-sm).",
+    "Use the 'auth_background' image for the login page split layout.",
+    "Ensure all interactive elements have data-testid attributes.",
+    "Use 'sonner' for all toast notifications.",
+    "Do not use gradients for backgrounds. Use solid colors with subtle noise if possible.",
+    "Prioritize high contrast and readability."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'AI slop' designs. Be bold with spacing and typography.",
+    "No 'Inter' font for headings.",
+    "No gradients for text or buttons.",
+    "Use 2-3x more spacing than typical designs.",
+    "Every interaction needs a micro-animation.",
+    "Use 'sonner' for toasts."
+  ]
+}
